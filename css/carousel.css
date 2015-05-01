@@ -1,0 +1,101 @@
+.gallery-carousel-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-carousel-inner {
+    white-space: nowrap;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.gallery-carousel-slide {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-carousel-navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.gallery-carousel-navigation-prev,
+.gallery-carousel-navigation-next {
+    display: block;
+    position: absolute;
+    color: transparent;
+    width: 0;
+    height: 0;
+    border: 28px solid transparent;
+    cursor: pointer;
+}
+
+.galeria-capa .gallery-carousel-navigation-prev,
+.galeria-capa .gallery-carousel-navigation-next {
+    top: 217px;
+}
+
+.galeria-colecao .gallery-carousel-navigation-prev,
+.galeria-colecao .gallery-carousel-navigation-next {
+    top: 231px;
+}
+
+.galeria-tapete .gallery-carousel-navigation-prev,
+.galeria-tapete .gallery-carousel-navigation-next {
+    top: 255px;
+}
+
+.gallery-carousel-navigation-prev {
+    left: 50px;
+    right: auto;
+    border-right: 40px solid rgba(235, 235, 235, 0.6);
+    border-left: none;
+}
+
+.gallery-carousel-navigation-prev:hover {
+    border-right-color: rgba(235, 235, 235, 0.9);
+}
+
+.gallery-carousel-navigation-next {
+    right: 50px;
+    left: auto;
+    border-left: 40px solid rgba(235, 235, 235, 0.6);
+    border-right: none;
+}
+
+.gallery-carousel-navigation-next:hover {
+    border-left-color: rgba(235, 235, 235, 0.9);
+}
+
+.gallery-carousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.gallery-carousel-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(235, 235, 235, 0.6);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gallery-carousel-pagination-bullet.active,
+.gallery-carousel-pagination-bullet:hover {
+    background-color: rgba(235, 235, 235, 0.9);
+    transform: scale(1.3);
+}
+
+.capa-link {
+    top: 6.5em;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}

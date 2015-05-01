@@ -1,0 +1,160 @@
+@charset 'utf-8';
+/* 
+ * CONTENT
+ * ---------------------------------------------
+ * */
+
+.page-titles {
+    margin-bottom: 2em;
+}
+
+.introduction {
+    margin-bottom: 4em;
+}
+
+.loja {
+    margin-bottom: 2em;
+}
+/*
+ * IMAGENS
+ * ---------------------------------------------
+ * */
+
+.linha-featured-image {
+    position: relative;
+    color: currentColor;
+    text-transform: uppercase;
+    /*background-color: #ffffff;*/
+}
+
+.linha-featured-image:hover {
+    /*background-color: #000000;*/
+}
+
+.linha-featured-image:hover img {
+    opacity: 0.3;
+}
+
+.linha-featured-image img {
+    opacity: 1;
+}
+
+.linha-featured-image:hover figcaption {
+    opacity: 1;
+    transform: opacity 0.3s;
+}
+
+.linha-featured-image figcaption {
+    opacity: 0;
+    transform: opacity 0.3s;
+}
+
+.colecao-featured-image {
+    overflow: hidden;
+}
+
+.colecao-featured-image figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0.5em 0.75em;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.colecao-featured-image:hover figcaption {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.galeria {
+    position: relative;
+    margin-bottom: 2.25em;
+}
+
+.galeria-capa {
+    height: 668px;
+    overflow: hidden;
+}
+
+.galeria-colecao {
+    height: 550px;
+    overflow: hidden;
+}
+
+.galeria-capa img,
+.galeria-colecao img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.galeria-tapete {
+    height: 550px;
+    width: 890px;
+    overflow: hidden;
+    margin-bottom: 0.75em;
+}
+
+.galeria-tapete img {
+    height: 550px;
+    width: auto;
+    margin-bottom: 0.5em;
+}
+
+.galeria-colecao .owl-controls,
+.galeria-tapete .owl-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.galeria-colecao .owl-prev,
+.galeria-colecao .owl-next,
+.galeria-tapete .owl-prev,
+.galeria-tapete .owl-next {
+    display: block;
+    position: absolute;
+    color: transparent;
+    width: 0;
+    height: 0;
+    border: 28px solid transparent;
+    top: 311px;   
+}
+.galeria-tapete .owl-prev,
+.galeria-tapete .owl-next {
+    top: 255px;
+}
+
+.galeria-colecao .owl-prev,
+.galeria-tapete .owl-prev {
+    left: 50px;
+    right: auto;
+    border-right: 40px solid rgba(255, 255, 255, 0.4);
+    border-left: none;
+}
+.galeria-colecao .owl-prev:hover,
+.galeria-tapete .owl-prev:hover {
+    border-right-color: rgba(255, 255, 255, 0.75);
+}
+
+.galeria-colecao .owl-next,
+.galeria-tapete .owl-next {
+    right: 50px;
+    left: auto;
+    border-left: 40px solid rgba(255, 255, 255, 0.4);
+    border-right: none;
+}
+.galeria-colecao .owl-next:hover,
+.galeria-tapete .owl-next:hover {
+    border-left-color: rgba(255, 255, 255, 0.75);
+}
+
+.slider    { overflow:hidden; position:relative; height: 550px;}
+.slider ul { margin:0; padding:0; list-style: none; white-space: nowrap; width: auto;}
+.slider li { display:inline-block; margin:0 25px 0 0; list-style:none; }
+
+

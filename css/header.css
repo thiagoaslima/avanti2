@@ -1,0 +1,154 @@
+@charset 'utf-8';
+
+.page-header {
+    position: fixed;
+    left: 0; 
+    right: 0;
+    height: 8em;
+    width: 75.5em;
+    padding: 3em 0 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+    font-weight: 300;
+    z-index: 9;
+}
+.is-home .page-header {
+  background-color: #000;
+}
+
+.page-header a {
+    display: block;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding-top: 0.2em;
+    border-top: 1px solid transparent;
+}
+
+.page-header a:hover,
+.page-header a.active,
+.current-menu-parent,
+.current-menu-parent > a,
+.current-menu-item > a {
+  border-top-color: currentColor;
+}
+
+
+#avanti {
+  height: 2.25em;
+}
+
+.logo svg {
+    width: 11em;
+    height: auto;
+    fill: currentColor;
+    top: 0.3em;
+}
+.logo a:hover {
+  border-top-color: transparent;
+}
+
+.menu-global ul:not(.sub-menu) {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 1em auto 0;
+}
+.menu-global > ul:after {
+  content: '|';
+  position: absolute;
+  right: 1em;
+  top: 0.2em;
+}
+
+.menu-global li {
+    display: inline-block;
+    position: relative;
+    margin-right: 2.1em;
+    text-transform: lowercase;
+    font-size: 1em;
+    font-weight: 300;
+}
+.menu-global li:last-of-type {
+  margin: 0;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    white-space: nowrap;
+    display: none;
+    margin-left: 0;
+    padding: 0.6em 0;
+}
+
+.menu-global .sub-menu li {
+  text-transform: uppercase;
+  font-size: 0.786em;
+}
+
+.menu-global li:hover .sub-menu {
+    display: block;
+}
+
+.page-search {
+    position: relative;
+    /* width: 1em; */
+    height: 1em;
+}
+
+
+/*
+ * MENU-2
+ * --------------------------------------
+ */
+[class*="page-header"] .menu-2{
+  /* border-left: 1px solid currentColor; */
+  padding: 0;
+  list-style: none;
+  height: 1.25em;
+  margin-top: 1em;
+}
+
+.menu-2 li {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 1.3em;
+    font-size: 1em;
+    font-weight: 300;
+}
+.menu-2 li:last-of-type {
+  margin-right: 0;
+  margin-left: 0;
+}
+  
+#site-search {
+    position: absolute;
+    width: 0;
+    right: 1.5em;
+    transition: width 0.3s;
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+    border-color: transparent;
+    border: 0;
+    font-size: 0.8125em;
+    font-weight: 500;
+    color: #777;
+}
+
+#site-search:focus {
+    width: 16em;
+    padding: 0.25em 0.5em;
+    margin-top: -0.35em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 1.5em;
+}
+
+
+/*invert*/
+.is_home .logo {
+    fill: #ffffff;
+}

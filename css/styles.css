@@ -1,0 +1,181 @@
+@charset 'utf-8';
+
+*, 
+*:after, 
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+    font-family: "gesta", Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+    font-weight: 400;
+    line-height: 1.3;
+    min-width: 75rem;
+    color: #333333;
+}
+
+.wrapper {
+    width: 75rem;
+    min-width: 75rem;
+    margin: 0 auto;
+    padding-top: 8.75em;
+}
+
+.pure-g [class *="pure-u"] {
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+    font-family: "gesta", Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+}
+
+.pure-nested-grid[class *="pure-u"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.one-line-justified {
+    text-align: justify; 
+}
+.one-line-justified:after {
+    content: '.';
+    display: inline-block;
+    width: 100%;
+}
+
+svg:not(:root) {
+    top: 0.2em;
+    fill: currentColor;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+}
+
+a,
+a:active,
+a:visited {
+    color: currentColor;
+}
+
+figure {
+    position: relative;
+    margin: 0;
+}
+
+img,
+figure img,
+.galeria img,
+.colecao-galeria img {
+    max-width: 100%;
+    height: auto;
+}
+
+[ng-click] {
+    cursor: pointer;
+}
+
+[collapse] {
+    overflow: hidden;
+}
+
+/* 
+ * INVERT
+ */
+.is-home {
+    background-color: #000000;
+    color: #eee;
+}
+
+/*
+.icon-x1_5{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: -0.25em;
+    margin-top: -0.25em;
+}
+
+.page-footer {
+    padding: 2.5em 0 4em;
+    text-align: center;
+}
+*/
+
+/*
+ * UTILS
+ * --------------------------------------------
+ */
+.vertical-center {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.vertical-center-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.vertical-center-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea {
+    padding: .25em .5em;
+    display: inline-block;
+    border: none;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 0;
+    background-color: #E6E6E6;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 21.5em;
+    margin-bottom: 0.5em;
+}
+.pure-form textarea {
+    vertical-align: top;
+    height: 10em;
+    resize: vertical;
+}
+
+.miniaturas {
+    padding: 1em 0;
+}
+
+.miniaturas a {
+    width: 6em;
+    height: 6em;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.miniaturas img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
